@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/favbuzzoff.png">
+    <link rel="icon" type="image/png" href="assets/images/buzzoff-logo.png">
     <title>Privacy Policy - Buzz Off</title>
     <meta name="description" content="Privacy Policy for Buzz Off - Break free from caffeine addiction with our mobile app.">
     <meta property="og:title" content="Privacy Policy - Buzz Off">
@@ -16,7 +16,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,224 +24,234 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
+                    fontFamily: { 'inter': ['Inter', 'sans-serif'] },
+                    colors: {
+                        buzz: {
+                            bg: '#FAF7F2',
+                            card: '#EEE7DF',
+                            border: '#D6CEC5',
+                            text: '#2B2B2B',
+                            muted: '#6D6D6D',
+                            primary: '#E59F42',
+                            accent: '#6BAF92',
+                        }
                     }
                 }
             }
         }
     </script>
-    
     <style>
         body { font-family: 'Inter', sans-serif; }
+        .icon-ios { border-radius: 22%; }
     </style>
 </head>
 <body>
-    <div class="min-h-screen bg-[#FAFAFB]">
+    <div class="min-h-screen bg-buzz-bg">
         <main>
-            <div class="min-h-screen bg-[#FAFAFB] py-12 px-4 sm:px-6 lg:px-8">
+            <div class="min-h-screen bg-buzz-bg py-12 px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto">
-                    <div class="bg-white rounded-xl p-8 sm:p-12 border border-[#EDEDED]">
+                    <div class="bg-buzz-card rounded-xl p-8 sm:p-12 border border-buzz-border">
                         <!-- Header -->
                         <div class="text-center mb-8">
-                            <a href="index.html" class="inline-block mb-6">
-                                <img src="images/logo-text.png" alt="Buzz Off" class="h-10 mx-auto">
+                            <a href="index.html" class="inline-flex items-center justify-center gap-2 mb-6">
+                                <img src="assets/images/buzzoff-logo.png" alt="Buzz Off" class="h-10 w-10 object-cover icon-ios">
+                                <span class="text-xl font-medium text-buzz-text">Buzz Off</span>
                             </a>
                         </div>
                         
-                        <h1 class="text-3xl sm:text-4xl font-medium text-gray-900 mb-2 tracking-tighter">Privacy Policy</h1>
-                        <p class="text-gray-600 font-light mb-8 tracking-tighter">Last updated: March 6, 2025</p>
+                        <h1 class="text-3xl sm:text-4xl font-medium text-buzz-text mb-2 tracking-tighter">Privacy Policy</h1>
+                        <p class="text-buzz-muted font-light mb-8 tracking-tighter">Last updated: March 6, 2025</p>
                         
                         <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and explains Your privacy rights and how the law protects You.
                             </p>
                             
-                            <p class="text-gray-700 font-light tracking-tighter mb-8">
+                            <p class="text-buzz-text font-light tracking-tighter mb-8">
                                 We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.
                             </p>
                             
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Interpretation and Definitions</h2>
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Interpretation and Definitions</h2>
                             
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Interpretation</h3>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Interpretation</h3>
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
                             </p>
                             
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Definitions</h3>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">For the purposes of this Privacy Policy:</p>
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Definitions</h3>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">For the purposes of this Privacy Policy:</p>
                             
                             <ul class="space-y-3 mb-8">
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Account</strong> means a unique account created for You to access Our Service or parts of Our Service.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Application</strong> refers to Buzz Off, the software program provided by the Company.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Buzz Off.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Country</strong> refers to: Queensland, Australia.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Device</strong> means any device that can access the Service such as a smartphone or tablet.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Service</strong> refers to the Application.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third‑party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Third‑Party Sign‑In Provider</strong> refers to any external authentication provider that allows a User to log in or create an account to use the Service, such as Apple or Google.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, in‑app events or crash diagnostics).</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>You</strong> means the individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Account</strong> means a unique account created for You to access Our Service or parts of Our Service.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Application</strong> refers to Buzz Off, the software program provided by the Company.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Buzz Off.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Country</strong> refers to: Queensland, Australia.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Device</strong> means any device that can access the Service such as a smartphone or tablet.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Service</strong> refers to the Application.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third‑party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Third‑Party Sign‑In Provider</strong> refers to any external authentication provider that allows a User to log in or create an account to use the Service, such as Apple or Google.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, in‑app events or crash diagnostics).</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>You</strong> means the individual accessing or using the Service, or the company or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</li>
                             </ul>
                             
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Collecting and Using Your Personal Data</h2>
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Collecting and Using Your Personal Data</h2>
                             
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Types of Data Collected</h3>
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Types of Data Collected</h3>
                             
-                            <h4 class="text-lg font-medium text-gray-900 mb-3 tracking-tighter">Personal Data</h4>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h4 class="text-lg font-medium text-buzz-text mb-3 tracking-tighter">Personal Data</h4>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
                             </p>
                             
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter">Email address</li>
-                                <li class="text-gray-700 font-light tracking-tighter">First name and last name</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Profile photo (optional)</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Authentication information from Third‑Party Sign‑In Providers (for example, when You sign in with Apple or Google)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Email address</li>
+                                <li class="text-buzz-text font-light tracking-tighter">First name and last name</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Profile photo (optional)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Authentication information from Third‑Party Sign‑In Providers (for example, when You sign in with Apple or Google)</li>
                             </ul>
 
-                            <h4 class="text-lg font-medium text-gray-900 mb-3 tracking-tighter">Health and Habit Data (User‑Entered)</h4>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h4 class="text-lg font-medium text-buzz-text mb-3 tracking-tighter">Health and Habit Data (User‑Entered)</h4>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 The core purpose of Buzz Off is to help You reduce or quit caffeine. To provide this functionality, You may choose to enter the following types of data:
                             </p>
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter">Daily check‑ins (mood, fatigue, headaches, irritability, cravings, low mood, and whether You had caffeine)</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Caffeine intake logs (for example, type of drink and amount of caffeine)</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Your goals and preferences (for example, Cold Turkey or Gradual mode, reasons for quitting, symptoms and goals selected during onboarding)</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Estimated daily caffeine amount (for example, in milligrams per day)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Daily check‑ins (mood, fatigue, headaches, irritability, cravings, low mood, and whether You had caffeine)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Caffeine intake logs (for example, type of drink and amount of caffeine)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Your goals and preferences (for example, Cold Turkey or Gradual mode, reasons for quitting, symptoms and goals selected during onboarding)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Estimated daily caffeine amount (for example, in milligrams per day)</li>
                             </ul>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 This information is entered by You and is used to power features such as streaks, progress charts, achievements, insights, and tools designed to support Your caffeine reduction journey. We do not sell this data.
                             </p>
                             
-                            <h4 class="text-lg font-medium text-gray-900 mb-3 tracking-tighter">Usage Data</h4>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h4 class="text-lg font-medium text-buzz-text mb-3 tracking-tighter">Usage Data</h4>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 Usage Data is collected automatically when using the Service.
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 Usage Data may include information such as Your Device type, operating system, unique device identifiers, crash information, in‑app events, and other diagnostic data that help Us understand how the Service is used and how it performs.
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 This data is used to maintain and improve the stability, performance, and user experience of the Service.
                             </p>
                             
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Information from Third‑Party Sign‑In Providers</h3>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Information from Third‑Party Sign‑In Providers</h3>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 The Company allows You to create an account and log in to use the Service through the following Third‑Party Sign‑In Providers:
                             </p>
                             
                             <ul class="space-y-2 mb-4">
-                                <li class="text-gray-700 font-light tracking-tighter">Apple</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Google</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Email and password (direct sign‑up and login)</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Apple</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Google</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Email and password (direct sign‑up and login)</li>
                             </ul>
                             
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 If You decide to register through or otherwise grant Us access to a Third‑Party Sign‑In Provider, We may collect Personal Data that is already associated with Your provider account, such as Your name and email address, in accordance with that provider’s own privacy policy.
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 You may also have the option of sharing additional information from Your provider account. If You choose to provide such information and Personal Data, You are giving the Company permission to use, share, and store it in a manner consistent with this Privacy Policy.
                             </p>
                             
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Information Collected while Using the Application</h3>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Information Collected while Using the Application</h3>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 While using Our Application, in order to provide certain features of Our Application, We may collect, with Your prior permission:
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 Pictures and other information from Your Device's photo library (for example, when You choose to upload a profile photo).
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 We use this information only to provide features of Our Service, such as displaying Your chosen profile image. The information may be uploaded to the Company's servers and/or a Service Provider's server or it may be stored on Your Device.
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter mb-8">
+                            <p class="text-buzz-text font-light tracking-tighter mb-8">
                                 You can enable or disable access to this information at any time through Your Device settings.
                             </p>
 
-                            <h3 class="text-xl font-medium text-gray-900 mb-3 tracking-tighter">Push Notifications and Preferences</h3>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h3 class="text-xl font-medium text-buzz-text mb-3 tracking-tighter">Push Notifications and Preferences</h3>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 With Your consent, We may collect and use a push notification token associated with Your Device to send:
                             </p>
                             <ul class="space-y-2 mb-4">
-                                <li class="text-gray-700 font-light tracking-tighter">Daily reminders to check in and track Your progress</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Encouragement messages and achievement alerts</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Daily reminders to check in and track Your progress</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Encouragement messages and achievement alerts</li>
                             </ul>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 You can change Your notification preferences or disable notifications at any time in the App settings or Your Device settings.
                             </p>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Use of Your Personal Data</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Use of Your Personal Data</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 The Company may use Personal Data for the following purposes:
                             </p>
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To provide and maintain the Service</strong>, including to create and manage Your Account, process Your check‑ins, track Your progress, streaks, and achievements, and provide tools designed to support You in reducing or quitting caffeine.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To manage Your subscription</strong>, including verifying whether You have an active Pro subscription and unlocking Pro‑only features.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To contact You</strong> via in‑app messages or email, where appropriate (for example, important service updates or account‑related messages).</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To provide notifications</strong>, including daily reminders and encouragement notifications, if You have opted in.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To improve the Service</strong> by monitoring usage, diagnosing crashes, and understanding how features are used so We can make improvements.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>To comply with legal obligations</strong> and to protect Our rights, where required.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To provide and maintain the Service</strong>, including to create and manage Your Account, process Your check‑ins, track Your progress, streaks, and achievements, and provide tools designed to support You in reducing or quitting caffeine.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To manage Your subscription</strong>, including verifying whether You have an active Pro subscription and unlocking Pro‑only features.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To contact You</strong> via in‑app messages or email, where appropriate (for example, important service updates or account‑related messages).</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To provide notifications</strong>, including daily reminders and encouragement notifications, if You have opted in.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To improve the Service</strong> by monitoring usage, diagnosing crashes, and understanding how features are used so We can make improvements.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>To comply with legal obligations</strong> and to protect Our rights, where required.</li>
                             </ul>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 The Company does not sell Your Personal Data.
                             </p>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Third‑Party Service Providers</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Third‑Party Service Providers</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 We may share Your information with Service Providers to monitor and analyze the use of our Service, to process subscriptions, to store data, or to contact You. These Service Providers act on Our behalf and are required to keep Your information secure.
                             </p>
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Supabase</strong> – Provides authentication, database storage, and profile image storage for the App.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>RevenueCat</strong> – Manages subscriptions and entitlements to determine whether You have access to Pro features.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Superwall</strong> – Displays paywalls and subscription offers inside the App.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Sentry</strong> – Collects crash reports and diagnostic information to help Us improve stability and fix bugs.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Expo / EAS</strong> – Helps deliver app updates and manage over‑the‑air updates for the App.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Apple</strong> – Provides Sign in with Apple, App Store distribution, and in‑app purchase infrastructure.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Google</strong> – Provides Google sign‑in and related authentication infrastructure.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Resend</strong> – May be used to send transactional emails such as account deletion confirmations, when required.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Supabase</strong> – Provides authentication, database storage, and profile image storage for the App.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>RevenueCat</strong> – Manages subscriptions and entitlements to determine whether You have access to Pro features.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Superwall</strong> – Displays paywalls and subscription offers inside the App.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Sentry</strong> – Collects crash reports and diagnostic information to help Us improve stability and fix bugs.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Expo / EAS</strong> – Helps deliver app updates and manage over‑the‑air updates for the App.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Apple</strong> – Provides Sign in with Apple, App Store distribution, and in‑app purchase infrastructure.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Google</strong> – Provides Google sign‑in and related authentication infrastructure.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Resend</strong> – May be used to send transactional emails such as account deletion confirmations, when required.</li>
                             </ul>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 Each of these Service Providers has its own privacy practices. We encourage You to review their privacy policies where appropriate.
                             </p>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Data Retention</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Data Retention</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy, unless a longer retention period is required or permitted by law.
                             </p>
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter">Account and profile data are retained while Your Account is active. If You request deletion of Your Account, We will delete or anonymize Your Personal Data, subject to any legal obligations to retain certain records.</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Daily check‑ins and caffeine logs are retained for as long as Your Account exists so that You can view historical progress, unless You delete Your Account.</li>
-                                <li class="text-gray-700 font-light tracking-tighter">Crash and diagnostic data are retained by Our analytics and error‑tracking providers for limited periods according to their policies.</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Account and profile data are retained while Your Account is active. If You request deletion of Your Account, We will delete or anonymize Your Personal Data, subject to any legal obligations to retain certain records.</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Daily check‑ins and caffeine logs are retained for as long as Your Account exists so that You can view historical progress, unless You delete Your Account.</li>
+                                <li class="text-buzz-text font-light tracking-tighter">Crash and diagnostic data are retained by Our analytics and error‑tracking providers for limited periods according to their policies.</li>
                             </ul>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Your Rights and Choices</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Your Rights and Choices</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 Depending on Your location, You may have certain rights regarding Your Personal Data. Regardless of where You live, We provide the following controls:
                             </p>
                             <ul class="space-y-2 mb-6">
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Access and update</strong> – You can view and update certain profile information directly in the App.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Delete Your Account</strong> – You can request deletion of Your Account from within the App. When You delete Your Account, We will delete or anonymize associated data, subject to legal obligations.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Export</strong> – Certain parts of Your data (for example, historical check‑ins) can be exported from within the App if You are a Pro subscriber.</li>
-                                <li class="text-gray-700 font-light tracking-tighter"><strong>Notifications</strong> – You can enable or disable push notifications in the App settings or in Your Device settings.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Access and update</strong> – You can view and update certain profile information directly in the App.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Delete Your Account</strong> – You can request deletion of Your Account from within the App. When You delete Your Account, We will delete or anonymize associated data, subject to legal obligations.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Export</strong> – Certain parts of Your data (for example, historical check‑ins) can be exported from within the App if You are a Pro subscriber.</li>
+                                <li class="text-buzz-text font-light tracking-tighter"><strong>Notifications</strong> – You can enable or disable push notifications in the App settings or in Your Device settings.</li>
                             </ul>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Children's Privacy</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Children's Privacy</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 Our Service is not intended for children under the age of 13. We do not knowingly collect Personal Data from children under 13. If You are a parent or guardian and You become aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from a child under 13 without verification of parental consent, We will take steps to remove that information from Our servers.
                             </p>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Changes to This Privacy Policy</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-6">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Changes to This Privacy Policy</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-6">
                                 We may update Our Privacy Policy from time to time. We will notify You of any material changes by updating the &quot;Last updated&quot; date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
                             </p>
 
-                            <h2 class="text-2xl font-medium text-gray-900 mb-4 tracking-tighter">Contact Us</h2>
-                            <p class="text-gray-700 font-light tracking-tighter mb-4">
+                            <h2 class="text-2xl font-medium text-buzz-text mb-4 tracking-tighter">Contact Us</h2>
+                            <p class="text-buzz-text font-light tracking-tighter mb-4">
                                 If You have any questions about this Privacy Policy, You can contact Us:
                             </p>
-                            <p class="text-gray-700 font-light tracking-tighter">
-                                By email: <a href="mailto:support@buzzoffapp.com" class="text-[#0366FF] hover:underline">support@buzzoffapp.com</a>
+                            <p class="text-buzz-text font-light tracking-tighter">
+                                By email: <a href="mailto:support@buzzoffapp.com" class="text-buzz-primary hover:underline font-medium">support@buzzoffapp.com</a>
                             </p>
                         </div>
                     </div>
@@ -249,16 +259,18 @@
             </div>
         </main>
 
-        <!-- Footer -->
-        <footer class="py-12 px-4 sm:px-6 lg:px-8">
+<footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-buzz-border">
             <div class="max-w-7xl mx-auto text-center">
-                <div class="flex justify-center space-x-8 mb-6">
-                    <a class="text-gray-600 hover:text-gray-900 transition-colors" href="index.html">home</a>
-                    <a class="text-gray-600 hover:text-gray-900 transition-colors" href="privacy-policy.html">privacy</a>
-                    <a class="text-gray-600 hover:text-gray-900 transition-colors" href="terms.html">terms</a>
-                    <a class="text-gray-600 hover:text-gray-900 transition-colors" href="contact.html">contact</a>
+                <div class="flex justify-center items-center gap-2 mb-6">
+                    <img src="assets/images/buzzoff-logo.png" alt="" class="h-8 w-8 object-cover icon-ios" aria-hidden="true">
+                    <div class="flex space-x-8">
+                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="index.html">home</a>
+                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="privacy-policy.html">privacy</a>
+                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="terms.html">terms</a>
+                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="contact.html">contact</a>
+                    </div>
                 </div>
-                <p class="text-gray-500 text-sm">© 2025 Buzz Off. all rights reserved.</p>
+                <p class="text-buzz-muted text-sm">© 2025 Buzz Off. All rights reserved.</p>
             </div>
         </footer>
     </div>
