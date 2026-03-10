@@ -1,100 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/buzzoff-logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="assets/images/buzzoff-logo.png" />
+    <link rel="apple-touch-icon" href="assets/images/buzzoff-logo.png" />
     <title>Contact - Buzz Off</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { 'inter': ['Inter', 'sans-serif'] },
-                    colors: {
-                        buzz: {
-                            bg: '#FAF7F2',
-                            card: '#EEE7DF',
-                            border: '#D6CEC5',
-                            text: '#2B2B2B',
-                            muted: '#6D6D6D',
-                            primary: '#E59F42',
-                            accent: '#6BAF92',
-                        }
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { inter: ["Inter", "sans-serif"] },
+            colors: {
+              buzz: {
+                bg: "#FAF7F2",
+                card: "#EEE7DF",
+                border: "#D6CEC5",
+                text: "#2B2B2B",
+                muted: "#6D6D6D",
+                primary: "#E59F42",
+                accent: "#6BAF92",
+              },
+            },
+          },
+        },
+      };
     </script>
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .icon-ios { border-radius: 22%; }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .icon-ios {
+        border-radius: 22%;
+      }
     </style>
-</head>
-<body class="bg-buzz-bg">
-    <div class="min-h-screen">
-        <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-            <div class="text-center mb-12">
-                <a href="index.html" class="inline-flex items-center justify-center gap-2 mb-8">
-                    <img src="assets/images/buzzoff-logo.png" alt="Buzz Off" class="h-10 w-10 object-cover icon-ios">
-                    <span class="text-xl font-medium text-buzz-text">Buzz Off</span>
-                </a>
-                <h1 class="text-3xl font-medium text-buzz-text mb-4 tracking-tighter">Contact Support</h1>
-                <p class="text-lg text-buzz-muted font-light tracking-tighter">We're here to help with any questions or issues</p>
-            </div>
+  </head>
+  <body class="bg-buzz-bg text-buzz-text">
+    <div class="min-h-screen bg-buzz-bg">
+      <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center mb-12">
+          <a
+            href="index.html"
+            class="inline-flex items-center justify-center gap-2 mb-8"
+          >
+            <img
+              src="assets/images/buzzoff-logo.png"
+              alt="Buzz Off"
+              class="h-10 w-10 object-cover icon-ios"
+            />
+            <span class="text-xl font-medium text-buzz-text">Buzz Off</span>
+          </a>
+          <h1 class="text-3xl font-medium text-buzz-text mb-4 tracking-tighter">
+            Contact Support
+          </h1>
+          <p class="text-lg text-buzz-muted font-light tracking-tighter">
+            We're here to help with any questions or issues
+          </p>
+        </div>
 
-            <!-- Main Contact Info -->
-            <div class="bg-buzz-card rounded-xl p-8 border border-buzz-border mb-8 text-center">
-                <h2 class="text-xl font-medium text-buzz-text mb-4 tracking-tighter">Get in Touch</h2>
-                <p class="text-buzz-muted mb-6">For support, questions, or feedback, please email us:</p>
-                <a href="mailto:support@buzzoffapp.com" class="inline-flex items-center px-6 py-3 bg-buzz-primary text-white rounded-xl hover:opacity-90 transition-opacity text-lg font-medium">
-                    support@buzzoffapp.com
-                </a>
-            </div>
+        <!-- Main Contact Info -->
+        <div
+          class="bg-buzz-card rounded-xl p-8 border border-buzz-border mb-8 text-center"
+        >
+          <h2 class="text-xl font-medium text-buzz-text mb-4 tracking-tighter">
+            Get in Touch
+          </h2>
+          <p class="text-buzz-muted mb-6">
+            For support, questions, or feedback, please email us:
+          </p>
+          <a
+            href="mailto:support@buzzoffapp.com"
+            class="inline-flex items-center px-6 py-3 bg-buzz-primary text-white rounded-xl hover:opacity-90 transition-opacity text-lg font-medium"
+          >
+            support@buzzoffapp.com
+          </a>
+        </div>
 
-            <!-- Subscription / Pro Support -->
-            <div class="bg-buzz-card rounded-xl p-8 border border-buzz-border mb-8">
-                <div class="text-center">
-                    <h3 class="text-xl font-medium text-buzz-text mb-4">Previous subscription or Pro access issues?</h3>
-                    <p class="text-buzz-muted mb-6 leading-relaxed">
-                        If you had an active Pro subscription before our recent app update and are experiencing access issues, we're here to help restore your premium features.
-                    </p>
-                    <div class="bg-white/70 rounded-lg p-6 mb-6 border border-buzz-border">
-                        <h4 class="font-medium text-buzz-text mb-3">Please email us with:</h4>
-                        <ul class="text-buzz-muted text-left max-w-md mx-auto space-y-2">
-                            <li>• Screenshot of your active App Store subscription</li>
-                            <li>• The email address used for your subscription</li>
-                            <li>• Any progress or data you'd like restored</li>
-                        </ul>
-                    </div>
-                    <p class="text-buzz-text font-medium">
-                        We'll restore your Pro access as quickly as we can and may add extra time for any inconvenience.
-                    </p>
-                </div>
+        <!-- Subscription / Pro Support -->
+        <div class="bg-buzz-card rounded-xl p-8 border border-buzz-border mb-8">
+          <div class="text-center">
+            <h3 class="text-xl font-medium text-buzz-text mb-4">
+              Previous subscription or Pro access issues?
+            </h3>
+            <p class="text-buzz-muted mb-6 leading-relaxed">
+              If you had an active Pro subscription before our recent app update
+              and are experiencing access issues, we're here to help restore
+              your premium features.
+            </p>
+            <div
+              class="bg-white/70 rounded-lg p-6 mb-6 border border-buzz-border"
+            >
+              <h4 class="font-medium text-buzz-text mb-3">
+                Please email us with:
+              </h4>
+              <ul class="text-buzz-muted text-left max-w-md mx-auto space-y-2">
+                <li>• Screenshot of your active App Store subscription</li>
+                <li>• The email address used for your subscription</li>
+                <li>• Any progress or data you'd like restored</li>
+              </ul>
             </div>
+            <p class="text-buzz-text font-medium">
+              We'll restore your Pro access as quickly as we can and may add
+              extra time for any inconvenience.
+            </p>
+          </div>
+        </div>
 
-            <div class="text-center text-buzz-muted">
-                <p>We typically respond within 24 hours</p>
-            </div>
-        </main>
+        <div class="text-center text-buzz-muted">
+          <p>We typically respond within 24 hours</p>
+        </div>
+      </main>
 
-        <footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-buzz-border mt-12">
-            <div class="max-w-7xl mx-auto text-center">
-                <div class="flex justify-center items-center gap-2 mb-4">
-                    <img src="assets/images/buzzoff-logo.png" alt="" class="h-8 w-8 object-cover icon-ios" aria-hidden="true">
-                    <div class="flex space-x-8">
-                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="index.html">home</a>
-                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="privacy-policy.html">privacy</a>
-                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="terms.html">terms</a>
-                        <a class="text-buzz-muted hover:text-buzz-text transition-colors" href="contact.html">contact</a>
-                    </div>
-                </div>
-                <p class="text-buzz-muted text-sm">© 2025 Buzz Off. All rights reserved.</p>
+      <footer
+        class="py-8 px-4 sm:px-6 lg:px-8 border-t border-buzz-border mt-12"
+      >
+        <div class="max-w-7xl mx-auto text-center">
+          <div class="flex justify-center items-center gap-2 mb-4">
+            <img
+              src="assets/images/buzzoff-logo.png"
+              alt=""
+              class="h-8 w-8 object-cover icon-ios"
+              aria-hidden="true"
+            />
+            <div class="flex space-x-8">
+              <a
+                class="text-buzz-muted hover:text-buzz-text transition-colors"
+                href="index.html"
+                >home</a
+              >
+              <a
+                class="text-buzz-muted hover:text-buzz-text transition-colors"
+                href="privacy-policy.html"
+                >privacy</a
+              >
+              <a
+                class="text-buzz-muted hover:text-buzz-text transition-colors"
+                href="terms.html"
+                >terms</a
+              >
+              <a
+                class="text-buzz-muted hover:text-buzz-text transition-colors"
+                href="contact.html"
+                >contact</a
+              >
             </div>
-        </footer>
+          </div>
+          <p class="text-buzz-muted text-sm">
+            © 2025 Buzz Off. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
